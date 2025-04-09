@@ -3,6 +3,9 @@ A Visual Studio Code syntax extension for 4D.
 
 based on [4D.tmbundle](https://github.com/miyako/4D.tmbundle)
 
+<img src="https://github.com/user-attachments/assets/1235826e-6a98-49fb-8719-1a2f995cdd60" width=400 height=auto />
+
+
 ## remarks
 
 the `support` scope typically has no colour assigned so `variable` is used instead.  

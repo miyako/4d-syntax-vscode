@@ -21,6 +21,7 @@
 				],
 				"extensions": [
 					".4dm",
+					".c4d",
 					".4qs"
 				],
 				"configuration": "./language-configuration.json"

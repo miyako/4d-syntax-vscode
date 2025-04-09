@@ -3,8 +3,9 @@ A Visual Studio Code syntax extension for 4D.
 
 based on [4D.tmbundle](https://github.com/miyako/4D.tmbundle)
 
-<img src="https://github.com/user-attachments/assets/1235826e-6a98-49fb-8719-1a2f995cdd60" width=400 height=auto />
+normally you should use the LSP aware [4D-Analzer](https://marketplace.visualstudio.com/items?itemName=4D.4d-analyzer).
 
+<img src="https://github.com/user-attachments/assets/1235826e-6a98-49fb-8719-1a2f995cdd60" width=400 height=auto />
 
 ## remarks
 

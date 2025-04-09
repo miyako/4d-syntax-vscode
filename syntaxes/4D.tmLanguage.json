@@ -1,0 +1,353 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "4D",
+  "patterns": [
+    {
+      "begin": "/\\*",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.comment.begin.4d"
+        }
+      },
+      "end": "\\*/",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.comment.end.4d"
+        }
+      },
+      "name": "comment.block.4d"
+    },
+    {
+      "name": "comment.line.double-slash.4d",
+      "begin": "\\s*+(\\/\\/)",
+      "beginCaptures": {
+        "1": {
+        "name": "punctuation.definition.comment.4d"
+        }
+      },
+      "end": "(?<=\\n)(?<!\\\\\\n)",
+      "patterns": []
+    },
+    {
+      "match": "(?<!\\w|:)[0-9]+\\b",
+      "name": "constant.numeric.4d"
+    },
+    {
+      "match": "\\s*[0-9]+[.,][0-9]+\\b",
+      "name": "constant.numeric.decimal.4d"
+    },
+    {
+      "match": "\\s*[0-9]+[.,][0-9]+[eE]-?[0-9]+\\b",
+      "name": "constant.numeric.exponential.4d"
+    },
+    {
+      "match": "\\s*0[xX][0-9a-fA-F]+\\b",
+      "name": "constant.numeric.hexadecimal.4d"
+    },
+    {
+      "match": "\\s*[?][0-9]{2}:[0-9]{2}:[0-9]{2}[?]\\b",
+      "name": "constant.other.time.4d"
+    },
+    {
+      "match": "\\s*[!][0-9]{2,4}-[0-9]{2}-[0-9]{2}[!]\\b",
+      "name": "constant.other.date.4d"
+    },
+    {
+      "match": "\\s*[!][0-9]{2}-[0-9]{2}-[0-9]{2,4}[!]\\b",
+      "name": "constant.other.date.4d"
+    },
+    {
+      "match": "\\s*([\\p{Letter}])([\\p{Letter} 0-9])+([\\p{Letter}])(?=(:K[0-9]+:[0-9]+))\\b",
+      "name": "constant.language.4d"
+    },
+    {
+      "match": "(?<=[\"])((\\\\[\"ntr\\\\])|[^\"])*(?=[\"])",
+      "name": "string.quoted.double.4d"
+    },
+    {
+      "match": "\\s*[$][0-9]+\\b",
+      "name": "variable.parameter.numeric.4d"
+    },
+    {
+      "match": "\\s*[$]([\\p{Letter}_]+)([\\p{Letter}_0-9]*)+\\b",
+      "name": "variable.other.local.4d"
+    },
+    {
+      "match": "\\s*<>([\\p{Letter}_]+)([\\p{Letter}_0-9]*)+\\b",
+      "name": "variable.other.interprocess.4d"
+    },
+    {
+      "match": "(?<=\\.)([\\p{Letter}])([\\p{Letter}0-9])*(?=\\.|\\()\\b",
+      "name": "entity.name.function.orda.4d"
+    },
+    {
+      "match": "(?<=\\.)([\\p{Letter}])([\\p{Letter}0-9])*(?=\\.|\\()\\b",
+      "name": "variable.variable.orda.4d"
+    },
+    {
+      "match": "\\s*([\\p{Letter}])([\\p{Letter} 0-9])*([\\p{Letter}])(?=(:C[0-9]+))\\b",
+      "name": "entity.name.function.classic.4d"
+    },
+    {
+      "match": "\\s*_[oO]_([cC]_)?([\\p{Letter} ])+([\\p{Letter}])(?=(:C[0-9]+))\\b",
+      "name": "entity.name.function.classic.deprecated.4d"
+    },
+    {
+      "match": "\\s*([cC]_)([\\p{Letter}])+(?=(:C[0-9]+))\\b",
+      "name": "variable.type.classic.4d"
+    },
+    {
+      "match": "\\s*(?i)(super|this|form|null|4d|ds|cs)(?=(:C[0-9]+)?)\\b",
+      "name": "variable.language.orda.4d"
+    },
+    {
+      "match": "\\b(?i:try)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:catch)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end try)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\s*(?i)(#DECLARE)\\b",
+      "name": "keyword.other.declare.4d"
+    },
+    {
+      "match": "\\b(?i:alias )([\\p{Letter}]+ )([\\p{Letter}\\.]*)([\\p{Letter}]+)\\b",
+      "name": "keyword.other.alias.4d"
+    },
+    {
+      "match": "\\b(?i:local )?(?i:exposed )?(?i:function )([\\p{Letter}]+ )?([\\p{Letter}]+)\\b",
+      "name": "keyword.other.function.4d"
+    },
+    {
+      "match": "\\b(?i:return)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:break)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:continue)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end use)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:fin utiliser)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:begin sql)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:debut sql)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:end sql)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:fin sql)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:case of)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:au cas ou)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end case)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:fin de cas)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:if)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:si)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:else)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:sinon)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:fin de si)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:boucle)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:fin de boucle)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:repeat)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:repeter)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:until)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:jusque)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:while)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:tant que)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end while)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:fin tant que)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:pour chaque)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end for each)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end for)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:for each)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:for)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:end if)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:fin de chaque)\\b",
+      "name": "keyword.control.4d"
+    },
+    {
+      "match": "\\b(?i:class constructor)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:class extends)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "(?<= : )([\\p{Letter}])([\\p{Letter}0-9]*)\\b",
+      "name": "variable.type.orda.4d"
+    },
+    {
+      "match": "\\b(?i:property)\\b",
+      "name": "storage.type.4d"
+    },
+    {
+      "match": "\\b(?i:var)\\b",
+      "name": "storage.type.4d"
+    },
+    {
+      "match": "\\b(?i:use)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:utiliser)\\b",
+      "name": "keyword.other.4d"
+    },
+    {
+      "match": "\\b(?i:error method)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:error line)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:error formula)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:error)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:mousedown)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:mouseproc)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:mouse[xy])\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:keycode)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:modifiers)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:flddelimit)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:recdelimit)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:ok)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "match": "\\b(?i:document)\\b",
+      "name": "variable.classic.4d"
+    },
+    {
+      "name": "keyword.operator.4d",
+      "match": "\\+=|\\-=|\\*=|\\/=|\\~\\||&&|&|\\|\\||\\||<<|>>|<=|>=|<|>|:=|\\?\\?|\\?\\+|\\?\\-|\\+|\\-|\\*|\\/|=|#|\\^|%|\\?|:"
+    }
+  ],
+  "scopeName": "source.4dm"
+}

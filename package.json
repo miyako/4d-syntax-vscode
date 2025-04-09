@@ -1,0 +1,36 @@
+{
+	"name": "4d-syntax",
+	"displayName": "4D Language Support",
+	"description": "Syntax highlighting for 4D",
+	"version": "0.0.1",
+	"publisher": "Keisuke Miyako",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"icon": "images/4D-icon.png",
+	"contributes": {
+		"languages": [
+			{
+				"id": "4d",
+				"aliases": [
+					"4D"
+				],
+				"extensions": [
+					".4dm",
+					".4qs"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "4d",
+				"scopeName": "source.4dm",
+				"path": "./syntaxes/4D.tmLanguage.json"
+			}
+		]
+	}
+}

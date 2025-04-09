@@ -121,7 +121,7 @@
       "name": "keyword.other.alias.4d"
     },
     {
-      "match": "\\b(?i:local )?(?i:exposed )?(?i:function )([\\p{Letter}]+ )?([\\p{Letter}]+)\\b",
+      "match": "\\b(?i)(local |exposed |shared )*(function )([\\p{Letter}]+ )?([\\p{Letter}]+)\\b",
       "name": "keyword.other.function.4d"
     },
     {
@@ -265,7 +265,7 @@
       "name": "keyword.control.4d"
     },
     {
-      "match": "\\b(?i:class constructor)\\b",
+      "match": "\\b(?i)(shared )?(singleton )?(class constructor)\\b",
       "name": "keyword.other.4d"
     },
     {

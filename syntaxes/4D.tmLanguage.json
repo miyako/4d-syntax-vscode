@@ -265,7 +265,7 @@
       "name": "keyword.control.4d"
     },
     {
-      "match": "\\b(?i)(shared )?(singleton )?(class constructor)\\b",
+      "match": "\\b(?i)(singleton |shared )(class constructor)\\b",
       "name": "keyword.other.4d"
     },
     {

@@ -1,2 +1,2 @@
 # 4d-syntax-vscode
-A Visual Studio Code syntax highlighter for 4D.
+A Visual Studio Code syntax extension for 4D.

@@ -2,7 +2,7 @@
 ![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-64&color=blue) [![license](https://img.shields.io/github/license/miyako/4d-syntax-vscode)](LICENSE)
 ![downloads](https://img.shields.io/github/downloads/miyako/4d-syntax-vscode/total)
 
-# 4d-syntax-vscode
+# language-4dm-vscode
 A Visual Studio Code syntax extension for 4D.
 
 based on [4D.tmbundle](https://github.com/miyako/4D.tmbundle)

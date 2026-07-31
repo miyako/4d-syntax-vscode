@@ -3,12 +3,10 @@
 ![downloads](https://img.shields.io/github/downloads/miyako/language-4dm-vscode/total)
 
 # language-4dm-vscode
-A Visual Studio Code syntax extension for 4D.
-
-based on [4D.tmbundle](https://github.com/miyako/4D.tmbundle)
+A Visual Studio Code syntax extension for 4D based on [4D.tmbundle](https://github.com/miyako/4D.tmbundle)
 
 > [!NOTE]
-> Normally you should use the official [**4D**](https://marketplace.visualstudio.com/items?itemName=4D.4d) extension for VS Code. 
+> This implementation is a proof-of-concept. Normally you should use the official [**4D**](https://marketplace.visualstudio.com/items?itemName=4D.4d) extension for VS Code. 
 
 # 4D Syntax Highlighting — Implementation Specification
 

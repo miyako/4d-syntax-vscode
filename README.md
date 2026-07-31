@@ -7,7 +7,8 @@ A Visual Studio Code syntax extension for 4D.
 
 based on [4D.tmbundle](https://github.com/miyako/4D.tmbundle)
 
-Normally you should use the official [**4D**](https://marketplace.visualstudio.com/items?itemName=4D.4d) extension for VS Code. 
+> [!NOTE]
+> Normally you should use the official [**4D**](https://marketplace.visualstudio.com/items?itemName=4D.4d) extension for VS Code. 
 
 # 4D Syntax Highlighting — Implementation Specification
 
